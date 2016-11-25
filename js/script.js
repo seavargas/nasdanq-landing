@@ -6,17 +6,18 @@ $(document).ready(function () {
   var nav = $('nav');
   var logo = $('#logo');
   var scrolled = false;
-  var sub = $('#title').children('h2');
-  sub.css({
-      opacity: '1',
-      'transform': 'translateY(0)'
-  });
 
+  //animations on page load
+  $('#title').children('h2').css({
+    opacity: '1',
+    'transform': 'translateY(0)'
+  });
   $('#content').find('div').css({
     opacity: '1',
     'transform': 'translateY(0)'
   });
 
+  //scroll event handler
   var el = $(window), lastY = el.scrollTop();
   el.on('scroll', function() {
     // get current scroll position
@@ -24,20 +25,24 @@ $(document).ready(function () {
       // determine current scroll direction
       y = (currY > lastY) ? 'down' : ((currY === lastY) ? 'none' : 'up');
 
+    //if user scrolled up
     if (y == 'up') {
       if (scrolled && done) {
-        navChange(0, 50);
+        navChange(0);
       }
-    } else if (y == 'down') {
+    }
+    //if user scrolled down
+    else if (y == 'down') {
       if (!scrolled && done) {
-        navChange(1, 0);
+        navChange(1);
       }
     }
     lastY = currY;
   });
 
+  //function that changes the navbar on scroll
   var done = true;
-  function navChange(color, h) {
+  function navChange(color) {
     done = false;
     logo.fadeOut(200, function () {
       logo.css('color', colors[color]);
