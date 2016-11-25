@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    html {-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);}
+    a, a:active, a:hover {
+      text-decoration: none !important;
+    }
+    a {
+      color: #2D2D2D;
+      position: fixed;
+      font-size: 24pt;
+      padding: 8pt;
+      transition: opacity .15s ease;
+      opacity: 0;
+      cursor: pointer;
+      pointer-events: none;
+    }
+    .fa-share-alt {
+      position: fixed;
+      top: 45pt;
+      left: 1.5pt;
+      padding: 8pt;
+      background: #e3e3e3;
+      border-radius: 20pt;
+      font-size: 16pt;
+      -webkit-box-shadow: -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+      -moz-box-shadow: -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+      box-shadow: -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+      cursor: pointer;
+    }
+    .fa-share-alt.show {
+      -webkit-box-shadow: inset -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+      -moz-box-shadow: inset -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+      box-shadow: inset -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
+    }
+    a:nth-of-type(1) {
+      top: 0;
+      left: 1.5pt;
+    }
+    a:nth-of-type(2) {
+      top: 13pt;
+      left: 26.5pt;
+      transition-delay: 0.1s;
+    }
+    a:nth-of-type(3) {
+      top: 40pt;
+      left: 36.5pt;
+      transition-delay: 0.2s;
+    }
+    a.show {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <i class="fa fa-share-alt share"></i>
+  <a href="#" target="_blank">
+    <i class="fa fa-facebook share"></i>
+  </a>
+  <a href="#" target="_blank">
+    <i class="fa fa-twitter share"></i>
+  </a>
+  <a href="#" target="_blank">
+    <i class="fa fa-reddit-alien"></i>
+  </a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var btn = parent.document.getElementById('shareBtn');
+    if (btn.getAttribute("name") != null) {
+      var a = btn.getAttribute("name").split('>', 3);
+      $('a:nth-of-type(1)').attr("href", a[0]);
+      $('a:nth-of-type(2)').attr("href", a[1]);
+      $('a:nth-of-type(3)').attr("href", a[2]);
+    }
+    $('.fa-share-alt').click(function () {
+      $('#wrapper').children().toggleClass('show');
+    });
+  });
+</script>
+</body>
+</html>
