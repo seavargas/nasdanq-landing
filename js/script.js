@@ -27,13 +27,13 @@ $(document).ready(function () {
 
     //if user scrolled up
     if (y == 'up') {
-      if (scrolled && done) {
+      if (scrolled && currY <= 75) {
         navChange(0);
       }
     }
     //if user scrolled down
     else if (y == 'down') {
-      if (!scrolled && done) {
+      if (!scrolled && currY > 75) {
         navChange(1);
       }
     }
@@ -41,15 +41,12 @@ $(document).ready(function () {
   });
 
   //function that changes the navbar on scroll
-  var done = true;
   function navChange(color) {
-    done = false;
     logo.fadeOut(200, function () {
       logo.css('color', colors[color]);
     });
     logo.fadeIn(100);
     nav.fadeToggle(500);
     scrolled = !scrolled;
-    done = true;
   }
 });
