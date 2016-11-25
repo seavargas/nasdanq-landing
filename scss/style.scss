@@ -89,10 +89,10 @@ html, body {font-family: 'Montserrat', sans-serif !important;}
       display: flex;
       justify-content: center;
       flex-direction: column;
-      width: 27vw;
+      width: 30vw;
       height: auto;
       background: #ebebeb;
-      padding: 125px 25px;
+      padding: 125px 0;
       transition: opacity .3s ease, transform .3s ease;
       opacity: 0;
       transform: translateY(25px);
@@ -111,6 +111,10 @@ html, body {font-family: 'Montserrat', sans-serif !important;}
       i {
         color: $primary;
         font-size: 6em;
+      }
+
+      p {
+        margin-top: 10px;
       }
     }
 
@@ -136,6 +140,7 @@ html, body {font-family: 'Montserrat', sans-serif !important;}
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+        background: transparent;
 
         i {
           margin: 0 10px;
