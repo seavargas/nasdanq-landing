@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e76030-4fe9-4b7f-b687-27ddc819e7e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/abstracts/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/abstracts/_functions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/abstracts/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/abstracts/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/_fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/_helpers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/_reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/base/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_border.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_cards.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_commentbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_form.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_hamburger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_hideshow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_icon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_lightbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_loader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_modal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_notif.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_shadow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_sliders.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_stockList.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_tag.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_ticker.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_toggle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_tooltip.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/components/_widget.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/layout/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/layout/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/layout/_grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/layout/_header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/layout/_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/pages/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/themes/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/themes/_colorblind.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/themes/_default.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/vendor/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.min.css.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/main.min.css" afterPath="$PROJECT_DIR$/stylesheets/reset.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/stylesheets/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout/_footer.scss" afterPath="$PROJECT_DIR$/stylesheets/layout/_footer.scss" />
     </list>
     <ignored path="strayco.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
               <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stylesheets/layout/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -180,7 +140,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/stylesheets/layout/_footer.scss" />
         <option value="$PROJECT_DIR$/stylesheets/layout/_nav.scss" />
         <option value="$PROJECT_DIR$/stylesheets/components/_button.scss" />
         <option value="$PROJECT_DIR$/stylesheets/layout/_grid.scss" />
@@ -188,6 +147,7 @@
         <option value="$PROJECT_DIR$/stylesheets/base/_base.scss" />
         <option value="$PROJECT_DIR$/stylesheets/components/_widget.scss" />
         <option value="$PROJECT_DIR$/stylesheets/main.scss" />
+        <option value="$PROJECT_DIR$/stylesheets/layout/_footer.scss" />
       </list>
     </option>
   </component>
@@ -494,12 +454,12 @@
       <workItem from="1479583531191" duration="418000" />
       <workItem from="1480028233476" duration="327000" />
       <workItem from="1480028607662" duration="18387000" />
-      <workItem from="1499790117255" duration="5129000" />
+      <workItem from="1499790117255" duration="5738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30966000" />
+    <option name="totallyTimeSpent" value="31575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="122" width="1015" height="694" extended-state="0" />
@@ -888,14 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/layout/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../nasdanq/stylesheets/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -973,6 +925,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/layout/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
