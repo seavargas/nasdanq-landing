@@ -1,0 +1,165 @@
+@import "../abstracts/variables";
+
+.card {
+  position: relative;
+  height: 80pt;
+  width: $card-width;
+  border-radius: 3px;
+  transition: width .5s ease, height .35s ease;
+
+  overflow: hidden;
+  //gradient
+  background: rgb(238,238,238);
+  background: -moz-linear-gradient(-45deg,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+  background: -webkit-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+  background: linear-gradient(135deg,  rgba(238,238,238,1) 0%, rgb(225, 225, 225) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee',endColorstr='#dcdcdc',GradientType=1 );
+
+  .functions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.scard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 80pt;
+  padding: 16pt;
+
+  .icon {
+    float: left;
+    width: $md;
+  }
+
+  .value {
+    float: left;
+    margin: 0 24pt 0 8pt;
+
+    @include screen('sm') {
+      font-size: $tS;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+    i {
+      pointer-events: none;
+    }
+  }
+
+  .functions {
+    margin-right: 0;
+    margin-left: auto;
+    flex-direction: column;
+    height: $xl;
+
+    i {
+      font-size: $tS;
+      cursor: pointer;
+    }
+    .fa-star {
+      color: $accent;
+    }
+  }
+}
+
+.ncard {
+  height: 80pt;
+  position: relative;
+  cursor: pointer;
+
+  .newsOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 4pt 8pt;
+    background: $text-color;
+    line-height: 1.2;
+    font-size: $tM;
+    color: $bg;
+    transition: background .15s ease;
+
+    .nTitle {
+      font-size: $tM;
+    }
+    .nTitle::first-letter {
+      color: $brand-color;
+      font-size: $tL;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    .newsOverlay {
+      background: rgba(45, 45, 45, 0.50);
+    }
+  }
+
+  .newsImg {
+    height: 100%;
+    width: 100%;
+    background: no-repeat center 10%;
+    background-size: cover;
+  }
+
+  @media (max-width: $large-card-width + 60pt) {
+    height: 168pt;
+    width: $card-width;
+    max-width: $card-width;
+
+    .newsOverlay {
+      width: 100%;
+    }
+  }
+}
+
+.cardL {
+  position: relative;
+  width: $large-card-width;
+
+  .nTitle {
+    max-width: $large-card-width - 14;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  @media (max-width: $large-card-width + 60pt) {
+    height: 168pt;
+    width: $card-width;
+
+    .nTitle {
+      white-space: normal;
+    }
+  }
+}
+
+.moreCards {
+  font-size: $mtL;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background .2s ease, color .25s ease-in;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: $text-color;
+    color: $bg;
+  }
+}
+
+.endlist {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}

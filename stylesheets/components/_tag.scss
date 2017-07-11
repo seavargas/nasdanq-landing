@@ -1,0 +1,13 @@
+div[contenteditable=true] {
+  .tag {
+    position: relative;
+    display: inline-block;
+    padding: 4pt;
+    background: rgba(226, 221, 95, 0.75);
+    border-radius: 3px;
+
+    i {
+      margin-left: 2pt;
+    }
+  }
+}

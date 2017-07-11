@@ -1,0 +1,23 @@
+#logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 32pt;
+  font-weight: 600;
+  line-height: 48pt;
+  color: $bg;
+  margin: 0 8pt;
+  z-index: 99;
+  cursor: pointer;
+}
+
+nav {
+  height: 48pt;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $brand-color;
+  line-height: 70px;
+  z-index: 98;
+}

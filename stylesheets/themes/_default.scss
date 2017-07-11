@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+body {
+  .active {
+    background: $brand-color;
+  }
+
+  .disabled {
+    color: $dark-grey;
+    background: $drop-color;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .special {
+    background: $accent;
+  }
+
+  //
+  .rise {
+    color: $brand-color;
+  }
+
+  .drop {
+    color: $drop-color;
+  }
+
+  .highlight {
+    color: $accent;
+  }
+
+  .nc {
+    color: $mid-grey;
+  }
+
+  .rBorder {
+    border-color: $brand-color;
+  }
+
+  .dBorder {
+    border-color: $drop-color;
+  }
+
+  .ncBorder {
+    border-color: $mid-grey;
+  }
+
+  .activeItem {
+    color: $bg;
+    background: $text-color;
+  }
+
+  div[contenteditable=true] {
+    box-shadow: 0 0 5px rgb(226, 221, 95);
+    border: 1px solid rgb(226, 221, 95);
+  }
+
+  input[type=text]:focus, input[type=password]:focus, textarea:focus, input.inputValid, textarea.inputValid, div[contenteditable=true].inputValid {
+    box-shadow: 0 0 5px rgb(116, 226, 115);
+    border: 1px solid rgb(116, 226, 115);
+  }
+
+  input.inputError, input.inputError:focus {
+    box-shadow: 0 0 5px rgb(226, 84, 66);
+    border: 1px solid rgb(226, 84, 66);
+
+    &::before {
+      content: '!';
+      color: rgb(226, 84, 66);
+      font-size: $title;
+    }
+  }
+
+  select:focus, select:active {
+    box-shadow: 0 0 5px rgb(116, 226, 115);
+    border: 1px solid rgb(116, 226, 115);
+  }
+
+  option:hover {
+    box-shadow: 0 0 5px rgb(116, 226, 115);
+  }
+
+  .warning {
+    color: $drop-color !important;
+    text-align: left;
+    pointer-events: none;
+  }
+}

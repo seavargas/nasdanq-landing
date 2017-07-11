@@ -1,0 +1,34 @@
+.stockList {
+  li {
+    height: 32pt;
+    line-height: 32pt;
+    padding: 0 8pt;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid $text-color;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background .2s ease;
+
+    .rise, .drop, .nc {
+      float: right;
+      i {
+        vertical-align: 2pt;
+        font-size: $tS;
+      }
+    }
+
+    &:nth-child(even) {
+      background: rgba(0, 0, 0, 0.15);
+    }
+  }
+  .stockUp {
+    &:hover {
+      background: rgba(90, 141, 62, 0.25);
+    }
+  }
+  .stockDown {
+    &:hover {
+      background: rgba(158, 30, 30, 0.25);
+    }
+  }
+}

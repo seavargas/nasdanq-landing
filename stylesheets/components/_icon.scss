@@ -1,0 +1,40 @@
+.icon {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: $lg;
+  min-width: $lg;
+  height: $lg;
+  line-height: $lg;
+  text-align: center;
+  font-size: $tL;
+  border-radius: 3px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.iconS {
+  width: $md;
+  min-width: $md;
+  height: $md;
+  line-height: $md;
+  font-size: $tM;
+}
+.iconL {
+  width: $xl;
+  min-width: $xl;
+  height: $xl;
+  line-height: $xl;
+  font-size: $tL;
+}
+
+.dickbutt {
+  background-image: url("https://i.imgur.com/1iAF5Oo.jpg");
+}
+.spongebob {
+  background-image: url("https://i.imgur.com/dsNfNwh.jpg");
+}

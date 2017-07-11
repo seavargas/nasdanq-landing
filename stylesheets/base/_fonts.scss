@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all font-family declarations.
+// -----------------------------------------------------------------------------
+#logo, #q, .homeBtn {
+  font-weight: 600;
+}
+
+.stockList, .scard, .ticker {
+  font-family: $number-font-stack;
+}
+
+.ticker {
+  font-weight: 100;
+}
+
+.rise, .drop, .nc {
+  font-family: $number-font-stack;
+}
+
+.firmMenu h1, .notifNum, .notifBar {
+  font-family: $number-font-stack;
+}
+
+.notifNum {
+  font-weight: 600;
+}

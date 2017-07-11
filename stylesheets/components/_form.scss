@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.form, form {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100vw;
+
+  hr {
+    margin: 5px 0;
+  }
+}
+
+.form.modal {
+  overflow-y: auto;
+}

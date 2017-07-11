@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  font-family: $text-font-stack;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg;
+  color: $text-color;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.title {
+  font-size: $title;
+  font-weight: bold;
+}
+q {
+  font-style: italic;
+}
+/**
+ * Basic styles for links
+ */
+html {
+  font-family: $text-font-stack;
+}
+
+a, i {
+  color: $brand-color;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: rgba($brand-color, 0.75);
+  }
+}
+
+input, textarea {
+  color: $darker-mid-grey;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  color: $text-color;
+}
+
+input[type=text], input[type=password], textarea, div[contenteditable=true] {
+  height: $md;
+  padding: 8pt;
+  margin: 5px 1px 3px 0;
+  font-size: $tM;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+select {
+  height: $md;
+  border-radius: 3px;
+  border-color: #dddddd;
+  min-height: 40px;
+  padding-left: 5px;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 100%;
+  background: $darker-light-grey;
+}
+
+i {
+  cursor: pointer;
+
+  & > span {
+    margin-left: 4pt;
+    font-family: $text-font-stack;
+  }
+}

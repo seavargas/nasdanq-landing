@@ -1,0 +1,76 @@
+.commentBox {
+  margin: 4pt 0;
+  padding: 8pt 16pt;
+  border: 1px solid $text-color;
+  border-radius: 3px;
+
+  .date {
+    text-align: right;
+    margin-top: 8pt;
+    color: $mid-grey;
+    pointer-events: none;
+  }
+
+  .commentHeader {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+
+    .commentAuthor {
+      display: inline-block;
+      color: $brand-color;
+      cursor: pointer;
+      transition: opacity .2s ease;
+    }
+
+    @include screen('sm') {
+      justify-content: center;
+      button {
+        margin: auto;
+      }
+    }
+  }
+
+  .functions {
+    display: flex;
+    margin-left: auto;
+
+    button {
+      position: absolute;
+      margin-left: 4pt;
+      opacity: 0;
+      transform: translateX(8pt);
+      pointer-events: none;
+      transition: transform .25s ease-in;
+    }
+
+    .slideLeft {
+      position: relative;
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .delete {
+      @include on-event() {
+        background: $drop-color;
+      }
+    }
+
+    div {
+      transition: color .2s ease;
+      @include on-event() {
+        color: $drop-color;
+      }
+    }
+  }
+
+  hr {
+    background: $light-grey;
+  }
+
+  p {
+    font-size: $tS;
+  }
+}

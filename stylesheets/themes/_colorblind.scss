@@ -1,0 +1,30 @@
+.colorblind {
+  $brand-color: #0169AB;
+  $drop-color: #C95200;
+
+  input[type=text]:focus, input[type=password]:focus, textarea:focus, input.inputValid, textarea.inputValid, div[contenteditable=true].inputValid {
+    box-shadow: 0 0 5px rgba(1, 154, 241, 0.76) !important;
+    border: 1px solid rgba(1, 154, 241, 0.76) !important;
+  }
+
+  select:focus, select:active {
+    box-shadow: 0 0 5px rgba(1, 154, 241, 0.76);
+    border: 1px solid rgba(1, 154, 241, 0.76);
+  }
+
+  option:hover {
+    box-shadow: 0 0 5px rgba(1, 154, 241, 0.76);
+  }
+
+  .search {
+    .btn {
+      background: rgba($brand-color, 0.75);
+    }
+  }
+
+  .stockList {
+    .stockUp:hover {
+      background: rgba(1, 105, 171, 0.25);
+    }
+  }
+}

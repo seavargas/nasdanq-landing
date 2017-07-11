@@ -1,0 +1,41 @@
+.uploading {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.uploading > div {
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  background-color: #333;
+  border-radius: 3px;
+
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.uploading .rect2 {
+  animation-delay: -1.1s;
+}
+
+.uploading .rect3 {
+  animation-delay: -1.0s;
+}
+
+.uploading .rect4 {
+  animation-delay: -0.9s;
+}
+
+.uploading .rect5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }  20% {
+       transform: scaleY(1.0);
+     }
+}

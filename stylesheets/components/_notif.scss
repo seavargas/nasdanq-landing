@@ -1,0 +1,14 @@
+.notif {
+  cursor: pointer;
+  color: $accent;
+}
+
+.notifNum {
+  display: inline-block;
+  min-width: 24pt;
+  padding: 0 4pt;
+  margin-left: 0;
+  text-align: center;
+  border-width: 2px;
+  border-radius: 99pt;
+}

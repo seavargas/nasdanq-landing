@@ -25,15 +25,18 @@ $(document).ready(function () {
       // determine current scroll direction
       y = (currY > lastY) ? 'down' : ((currY === lastY) ? 'none' : 'up');
 
+    //how far before navbar changes
+    var dist = 50;
+
     //if user scrolled up
     if (y == 'up') {
-      if (scrolled && currY <= 75) {
+      if (scrolled && currY <= dist) {
         navChange(0);
       }
     }
     //if user scrolled down
     else if (y == 'down') {
-      if (!scrolled && currY > 75) {
+      if (!scrolled && currY > dist) {
         navChange(1);
       }
     }
