@@ -61,7 +61,7 @@ input:focus, textarea:focus {
   color: $text-color;
 }
 
-input[type=text], input[type=password], textarea, div[contenteditable=true] {
+input[type=text], input[type=password], input[type=email], textarea, div[contenteditable=true] {
   height: $md;
   padding: 8pt;
   margin: 5px 1px 3px 0;

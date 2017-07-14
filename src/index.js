@@ -3,21 +3,21 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import App from './App.js';
+import Main from './Main.js';
 
 render(
     <AppContainer>
-        <App />
+        <Main />
     </AppContainer>,
     document.getElementById('root')
 );
 
 if (module.hot) {
-    module.hot.accept('./App', () => {
-        const NextApp = require('./App').default;
+    module.hot.accept('./Main', () => {
+        const NextApp = require('./Main').default;
 
         render(
-            <AppContainer>
-            </AppContainer>,
+            <AppContainer/>,
             document.getElementById('root')
         );
     });

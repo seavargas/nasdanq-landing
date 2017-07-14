@@ -38,17 +38,20 @@
       box-shadow: inset -1.5pt 1.5pt 0 0 rgb(215, 215, 215);
     }
     a:nth-of-type(1) {
-      top: 0;
-      left: 1.5pt;
+      /*top: 0;*/
+      /*left: 1.5pt;*/
+      transform: translate(-4pt, -4pt);
     }
     a:nth-of-type(2) {
-      top: 13pt;
-      left: 26.5pt;
+      /*top: 13pt;*/
+      /*left: 26.5pt;*/
+      transform: translate(20pt, 2pt);
       transition-delay: 0.1s;
     }
     a:nth-of-type(3) {
-      top: 40pt;
-      left: 36.5pt;
+      /*top: 40pt;*/
+      /*left: 36.5pt;*/
+      transform: translate(28pt, 30pt);
       transition-delay: 0.2s;
     }
     a.show {
@@ -59,7 +62,7 @@
 </head>
 <body>
 <div id="wrapper">
-  <i class="fa fa-share-alt share"></i>
+  <i class="fa fa-share-alt share" onclick="openWidget()"></i>
   <a href="#" target="_blank">
     <i class="fa fa-facebook share"></i>
   </a>
@@ -70,20 +73,27 @@
     <i class="fa fa-reddit-alien"></i>
   </a>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-  $(document).ready(function () {
-    var btn = parent.document.getElementById('shareBtn');
-    if (btn.getAttribute("name") != null) {
-      var a = btn.getAttribute("name").split('>', 3);
-      $('a:nth-of-type(1)').attr("href", a[0]);
-      $('a:nth-of-type(2)').attr("href", a[1]);
-      $('a:nth-of-type(3)').attr("href", a[2]);
+  var btn = parent.document.getElementById('shareBtn');
+  var wrapper = document.getElementById('wrapper');
+  var mainBtn = wrapper.getElementsByTagName('i')[0];
+  var anchors = wrapper.getElementsByTagName('a');
+  if (btn.getAttribute("name")) {
+    var links = btn.getAttribute("name").split('>', 3);
+    for (var i = 0; i < anchors.length; i++) {
+      anchors[i].setAttribute('href', links[i]);
     }
-    $('.fa-share-alt').click(function () {
-      $('#wrapper').children().toggleClass('show');
-    });
-  });
+  } else {
+    console.log('Share widget did not load');
+    btn.parentNode.removeChild(btn);
+  }
+  function openWidget() {
+    mainBtn.classList.contains('show')
+      ? mainBtn.classList.remove('show') : mainBtn.classList.add('show');
+    for (var anchor of anchors) {
+      anchor.classList.contains('show') ? anchor.classList.remove('show') : anchor.classList.add('show');
+    }
+  }
 </script>
 </body>
 </html>

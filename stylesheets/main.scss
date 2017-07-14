@@ -33,13 +33,15 @@
     margin-top: 8pt;
 
     hr {
-      max-width: 80vw;
+      max-width: 90vw;
       margin: 16pt auto;
     }
 
     h1 {
-      padding-top: 64pt;
+      position: relative;
+      margin: 64pt 0 8pt;
       font-size: 3em;
+      line-height: 1;
       font-weight: 600;
 
       span:first-of-type, span:last-of-type {
@@ -49,7 +51,6 @@
       span:last-of-type {
         position: absolute;
         font-size: 0.15em;
-        margin-top: 10pt;
       }
     }
 
@@ -57,9 +58,7 @@
       margin-bottom: 8pt;
       font-size: 1.5em;
       font-weight: 600;
-      opacity: 0;
-      transform: translateY(25px);
-      transition: all .3s ease .5s;
+      transition: all .15s ease .15s;
     }
 
     @include screen('md') {
@@ -69,17 +68,25 @@
         margin-bottom: 4pt;
       }
     }
+
+    @include screen('sm') {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
   }
   #content {
     justify-content: space-around;
+    padding: 8pt 24pt;
 
     & > div {
       background: rgba($light-grey, 0.6);
-      padding: 100pt 16pt;
-      opacity: 0;
-      transform: translateY(25px);
+      padding: 40pt 16pt;
       box-shadow: inset -2px 2px 15px 0px rgba(0,0,0,0.3);
-      transition: opacity .3s ease, transform .3s ease;
+      transition: opacity .15s ease-in, transform .15s ease-in;
 
       h1 {
         font-size: 1.8em;
@@ -88,40 +95,49 @@
       }
 
       i {
-        font-size: 6em;
+        font-size: 4em;
       }
 
       p, button {
         margin-top: 10px;
       }
 
+      &:first-of-type {
+        transition-delay: 1s;
+        input, button {
+          width: 90%;
+          margin: 4pt auto;
+        }
+      }
+      &:nth-of-type(2) {
+        transition-delay: 1.5s;
+        i {
+          margin-bottom: 8pt;
+        }
+      }
+      &:nth-of-type(3) {
+        transition-delay: 2s;
+
+        .social {
+          display: flex;
+          flex-flow: row nowrap;
+          align-self: center;
+
+          i {
+            margin: 0 8pt;
+          }
+        }
+      }
+
       @include screen('md') {
-        margin: 16pt;
         padding: 24pt;
 
         h1 {
           font-size: 1.4em;
         }
       }
-    }
-
-    div:first-of-type {
-      transition-delay: 1s;
-    }
-    div:nth-of-type(2) {
-      transition-delay: 1.5s;
-    }
-    div:nth-of-type(3) {
-      transition-delay: 2s;
-
-      .social {
-        display: flex;
-        flex-flow: row nowrap;
-        align-self: center;
-
-        i {
-          margin: 0 8pt;
-        }
+      @include screen('tiny') {
+        padding: 40pt 4pt;
       }
     }
   }

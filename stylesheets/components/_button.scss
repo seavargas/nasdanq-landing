@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 @import "../abstracts/variables";
 
-.btn, button {
+.btn, button, input[type=submit] {
   display: inline-block;
   width: auto;
   height: $md;
@@ -11,6 +11,7 @@
   text-align: center;
   font-size: $tM;
   padding: 0 16pt;
+  border: none;
   border-radius: 3px;
   background: $brand-color;
   color: $light-grey;

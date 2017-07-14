@@ -58,6 +58,16 @@
   transform: rotate(180deg);
 }
 
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
 @include screen('sm') {
   .mobileHide {
     opacity: 0;
