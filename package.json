@@ -29,6 +29,7 @@
     "babili-webpack-plugin": "^0.1.2",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-motion-ui-pack": "^0.10.3"
+    "react-motion-ui-pack": "^0.10.3",
+    "babel-polyfill": "^6.7.4"
   }
 }
